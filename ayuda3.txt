@@ -1,0 +1,4 @@
+para la api se debe cambiar el node de 14.21.3 al 20.11.1 (listar con nvm list)
+
+para ecommerce y mecatronic_admin es necesario nuevamente cambiar la version al 14.21.3 o similar.
+

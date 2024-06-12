@@ -1,0 +1,60 @@
+
+<div class="axil-signin-area">
+
+    <!-- Start Header -->
+    <div class="signin-header">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <a href="index.html" class="site-logo"><img src="./assets/images/logo/logo.png" style="width: 300px;" alt="logo"></a>
+            </div>
+            <div class="col-md-6">
+                <div class="singin-header-btn">
+                    <p>¿Ya tienes una cuenta?</p>
+                    <a href="sign-in.html"  style="background-color: yellow" class="axil-btn btn-bg-secondary sign-up-btn" [routerLink]="['/auth/login']">Inicia sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <div class="row">
+        <div class="col-xl-4 col-lg-6">
+            <div class="axil-signin-banner bg_image bg_image--10">
+                
+            </div>
+        </div>
+        <div class="col-lg-6 offset-xl-2">
+            <div class="axil-signin-form-wrap">
+                <div class="axil-signin-form">
+                    <h3 class="title">Bienvenido</h3>
+                    <p class="b2 mb--55">Ingresa tu información para el registro</p>
+                    <form class="singin-form">
+                        <div class="form-group">
+                            <label>Nombre completo</label>
+                            <input type="text" class="form-control" [(ngModel)]="name" name="name" >
+                        </div>
+                        <div class="form-group">
+                            <label>Apellido completo</label>
+                            <input type="text" class="form-control" [(ngModel)]="subname" name="subname" >
+                        </div>
+                        <div class="form-group">
+                            <label>Correo electronico</label>
+                            <input type="email" class="form-control" [(ngModel)]="email" name="email" >
+                        </div>
+                        <div class="form-group">
+                            <label>Contraseña</label>
+                            <input type="password" class="form-control"  [(ngModel)]="password" name="password" >
+                        </div>
+                        <div class="form-group">
+                            <label>Repetir contraseña</label>
+                            <input type="password" class="form-control"  [(ngModel)]="repeat_password" name="password" >
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="axil-btn btn-bg-primary submit-btn" [routerLink]="['/auth/login']" (click)="register()">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
